@@ -1,0 +1,216 @@
+<header>
+  <div class="container header">
+    <div class="logo">
+      <a href="/">
+        <%= render "logo" %>
+      </a>
+    </div>
+    <div class="alreadyHave">
+      <div>
+        Already have a
+        <%= render "wistia" %>
+        account?
+        <a href="#">
+          Log in
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container registration">
+    <div class="row">
+      <div class="col title_block">
+        <div class="title">
+          Put your marketing videos to work
+        </div>
+        <div class="subTitle">
+          A brandable player, in-depth video analytics, lead gen tools, and video SEO.
+          Wistia makes all your video marketing dreams come true.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col formBlock">
+        <form action="/">
+          <div class="googleBlock">
+            <button type="button" class="">
+              <%= render "google" %>
+              <span>Sign up with Google</span>
+            </button>
+          </div>
+          <hr class="devider" />
+          <div class="form-group row">
+            <div class="col two">
+              <label for="first_name">First name</label>
+              <input name="first_name" placeholder="Kenny" />
+            </div>
+            <div class="col two">
+              <label for="last_name">Last name</label>
+              <input name="last_name" placeholder="Kenny" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col two">
+              <label for="email">Your work email</label>
+              <input name="email" placeholder="Kenny@gmail.com" />
+            </div>
+            <div class="col two">
+              <label for="password">Set a password</label>
+              <input name="password" placeholder="8 characters or more!" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label namefor="ads">How did you first hear about Wistia?</label>
+              <select>
+                <option selected></option>
+                <% 5.times do |i| %>
+                  <option>
+                    Search engine <%= i + 1 %>
+                  </option>
+                <% end %>
+              </select>
+            </div>
+          </div>
+          <div class="button_block">
+            <button type="submit" class="submit">
+              <span class="text">Create account</span>
+              <span class="bg"></span>
+            </button>
+            <div class="terms">By clicking this button, you agree to our
+              <a href="/">Terms of Service</a> and
+              <a href="/">Privacy Policy</a>.</div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col questions">
+        <div class="row">
+          <div class="col two">
+            <div class="item">
+              <div class="title">Is there a catch?</div>
+              <p>
+                Nope, no funny business. All it takes to start your account is your work email address and a few other pieces of information. We don’t even ask for your credit card.
+              </p>
+            </div>
+            <div class="item">
+              <div class="title">Are there any limits?</div>
+              <p>The Free Plan comes with 3 videos, 200 GB of <a href="#">bandwidth</a> per month, and enough storage to house those videos. It also comes with Wistia player branding. We’ve set our bandwidth limits so high that most Wistia users will never need to worry about it. In fact, 99% of businesses don’t even come close.</p>
+            </div>
+            <div class="item">
+              <div class="title">Do I have to worry about you selling my email or data?</div>
+              <p>No. Your contact information and private data are yours and yours alone. They’re safe with us. We’ll email you about product and company updates, but you can opt out at any time. Learn more about our <a href="#">Privacy Policy</a>.</p>
+            </div>
+          </div>
+          <div class="col  two">
+            <div class="item">
+              <div class="title">I’m ready to buy a paid plan right now. How should I go about doing that?</div>
+              <p>No problem. Simply create your account, then navigate to Account > Settings > Purchase to buy a paid plan. Easy, right?</p>
+            </div>
+            <div class="item">
+              <div class="title">How can I speak with someone from your sales team?</div>
+              <p><a href="#">Our sales team is here to help you anytime</a>. We’re excited to talk all things video with you!</p>
+            </div>
+            <div class="item">
+              <div class="title">Can I try out one of your advanced integrations?</div>
+              <p>You sure can. After you create your account, navigate to Account > Settings > Integrations and follow the instructions on the page.</p>
+            </div>
+            <div class="item">
+              <div class="title">I have other questions! How can I get in touch with Wistia?</div>
+              <p><a href="#">Feel free to get in touch</a>. We’ll be happy to clarify anything, or just help you get up and running with your new account.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<fooret>
+  <div class="container">
+    <div class="row">
+      <div class="col footer_block">
+        <div class="quote_block">
+          <div class="text">Wistia creates video software for growing businesses.</div>
+          <div class="social">
+            Follow us:
+            <a href="/">Facebook</a>,
+            <a href="/">LinkedIn</a>,
+            <a href="/">Twitter</a>,
+            <a href="/">Instagram</a>
+          </div>
+        </div>
+        <hr class="vertical_devider"/>
+        <div class="links_block">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="icons">
+                  <%= render "logo" %>
+                </div>
+                <div class="title">Wistia For Marketing</div>
+                <div class="links_list">
+                  <ul>
+                    <li><a href="/">Features</a></li>
+                    <li><a href="/">Pricing</a></li>
+                    <li class="blue"><a href="/">Create a free account</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icons">
+                  <%= render "footer_icons" %>
+                </div>
+                <div class="title">Soapbox</div>
+                <div class="links_list">
+                  <ul>
+                    <li><a href="/">Features</a></li>
+                    <li><a href="/">Pricing</a></li>
+                    <li class="orange"><a href="/">Install for free</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="title">Company</div>
+                <div class="links_list">
+                  <ul>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/">Team</a></li>
+                    <li><a href="/">Careers</a></li>
+                    <li><a href="/">Values</a></li>
+                    <li><a href="/">Brand Assets</a></li>
+                    <li><a href="/">Community</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="title">Support</div>
+                <div class="links_list">
+                  <ul>
+                    <li><a href="/">Documentation</a></li>
+                    <li><a href="/">Developers</a></li>
+                    <li><a href="/">Troubleshooting</a></li>
+                    <li><a href="/">Status</a></li>
+                    <li><a href="/">Contact Support</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile_social">
+    <ul>
+      <li><a href="/"><%= render 'f' %></a></li>
+      <li><a href="/"><%= render 'in' %></a></li>
+      <li><a href="/"><%= render 't' %></a></li>
+      <li><a href="/"><%= render 'i' %></a></li>
+    </ul>
+  </div>
+  <div class="copyrights">
+    ©2001–2019 All rights reserved. <a href="#">Privacy</a> and <a href="#">Terms</a>.
+  </div>
+</fooret>
